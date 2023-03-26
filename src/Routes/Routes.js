@@ -4,6 +4,8 @@ import AllService from "../Components/AllService/AllService";
 import Contact from "../Components/Contact/Contact";
 import Home from "../Components/Home/Home";
 import HomePage from "../Components/HomePage/HomePage";
+import SignIn from "../Components/Shared/SIgnIn/SignIn";
+import SignUp from "../Components/Shared/SignUp/SignUp";
 import Update from "../Components/Update/Update";
 import Main from "../Main/Main";
 
@@ -36,7 +38,15 @@ export const routes = createBrowserRouter([
                 path: 'update/:id',
                 element: <Update></Update>,
                 loader: ({ params }) => fetch(`http://localhost:5000/jersey/${params.id}`)
-            }
+            },
+            {
+                path: 'signin',
+                element: <SignIn />
+            },
+            {
+                path: 'signup',
+                element: <SignUp />
+            },
 
 
         ]

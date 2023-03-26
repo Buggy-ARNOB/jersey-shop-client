@@ -19,6 +19,8 @@ function Header() {
                         <Link className='text-decoration-none px-2 text-dark fw-semibold' to='/jersey'>Jersey</Link>
                         <Link className='text-decoration-none px-2 text-dark fw-semibold' to='/addJersey'>Add Jersey</Link>
                         <Link className='text-decoration-none px-2 text-dark fw-semibold' to='/contactUs'>Contact Us</Link>
+                        <Link className='text-decoration-none px-2 text-dark fw-semibold' to='/signin'>Sign In</Link>
+                        <Link className='text-decoration-none px-2 text-dark fw-semibold' to='/signup'>Sign Up</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
