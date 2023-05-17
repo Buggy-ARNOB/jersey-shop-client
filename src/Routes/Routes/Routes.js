@@ -102,18 +102,7 @@ const router = createBrowserRouter([
                 element: <DashAuth role="admin">
                     <ReportedItem></ReportedItem>
                 </DashAuth>
-            },
-            {
-                path: '/dashboard/payment/:bookingId',
-                element: <DashAuth role="buyer">
-                    <Payment />
-                </DashAuth>,
-                loader: ({ params }) => fetch(`http://localhost:5000/bookingId/${params.bookingId}`, {
-                    headers: {
-                        authorization: `bearrer ${localStorage.getItem('accessToken')}`
-                    }
-                })
-            },
+            }
         ]
     }
 

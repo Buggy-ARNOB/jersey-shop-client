@@ -3,6 +3,7 @@ import { useQuery } from '@tanstack/react-query';
 import Loading from "../../../../component/Loading/Loading"
 import { AuthContext } from '../../../../contexts/AuthProvider';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-hot-toast';
 
 
 const MyOrder = () => {
@@ -29,6 +30,10 @@ const MyOrder = () => {
         }
     })
 
+
+    const handlePayment = () => {
+        toast.success("Payment Successfull")
+    }
 
     if (isLoading) {
         return <Loading />
@@ -71,9 +76,7 @@ const MyOrder = () => {
                                     {
                                         myOrder.payment === "false"
                                             ?
-                                            <Link to={`/dashboard/payment/${myOrder._id}`}>
-                                                <button className="btn btn-ghost btn-xs bg-violet-500 text-white hover:bg-violet-600">Pay</button>
-                                            </Link>
+                                            <button onClick={handlePayment} className="btn btn-ghost btn-xs bg-violet-500 text-white hover:bg-violet-600">Pay</button>
                                             :
                                             <p className='text-green-600 font-semibold text-sm'>Paid</p>
                                     }

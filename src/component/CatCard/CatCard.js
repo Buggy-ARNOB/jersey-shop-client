@@ -9,9 +9,9 @@ const AnimatedCard = ({ category }) => {
                     <div className="image rounded-lg">
                         <img className="max-h-[350px] rounded-lg" src={pic} alt="" />
                     </div>
-                    <h3 className="text-black text-2xl font-serif font-bold -mt-6 text-center align-middle name">{cat}</h3>
+                    <h3 className="text-black text-2xl font-serif font-bold -mt-10 text-center align-middle name">{cat}</h3>
                     <div className="content">
-                        <h3 className="text-black text-2xl font-serif font-bold -mt-4">{cat}</h3>
+                        <h3 className="text-black text-2xl font-serif font-bold ">{cat}</h3>
                         <p className=" text-black">
                             {description}
                         </p>
