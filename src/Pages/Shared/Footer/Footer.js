@@ -5,24 +5,11 @@ const Footer = () => {
     return (
         <div>
             <footer className="bg-white dark:bg-gray-900">
-                <div className="container px-6 py-8 mx-auto">
+                <div className="container p-6 mx-auto">
                     <div className="flex flex-col items-center text-center">
-
                         <img className="lg:w-52 xl:w-56 md:w-48 sm:w-40 " src={icon} alt="" />
-
-                        <div className="flex flex-wrap justify-center mt-6 -mx-4">
-                            <Link to={'/'} className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Home </Link>
-                            <Link to={'/'} className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Home </Link>
-                            <Link to={'/'} className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Home </Link>
-                            <Link to={'/'} className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Home </Link>
-                            <Link to={'/'} className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Home </Link>
-
-
-                        </div>
-
                     </div>
-
-                    <hr className="my-6 border-gray-200 md:my-10 dark:border-gray-700" />
+                    <hr className="mb-6 border-gray-200  dark:border-gray-700" />
 
                     <div className="flex flex-col items-center sm:flex-row sm:justify-between">
                         <p className="text-sm text-gray-500 dark:text-gray-300">© Copyright 2021. All Rights Reserved.</p>

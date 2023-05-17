@@ -45,7 +45,7 @@ const AddProduct = () => {
                         <label className="label">
                             <span className="label-text text-white">Product Name</span>
                         </label>
-                        <input type="text" placeholder="Ex:Toyota Supra MK5" className="input input-bordered input-sm rounded-md"  {...register("name", {
+                        <input type="text" placeholder="Ex:Argentina Home" className="input input-bordered input-sm rounded-md"  {...register("name", {
                             required: "Product Name is required"
                         })} />
                     </div>
@@ -73,16 +73,16 @@ const AddProduct = () => {
                             required: "Select A Category"
                         })}>
                             <option disabled defaultValue>Select Category</option>
-                            <option value={"1"}>City</option>
-                            <option value={"2"}>Sports</option>
-                            <option value={"3"}>EV</option>
+                            <option value={"1"}>Soccer</option>
+                            <option value={"2"}>Cricket</option>
+                            <option value={"3"}>Custom Made</option>
                         </select>
                     </div>
 
 
                     <div className="form-control w-full max-w-[250px]">
                         <label className="label">
-                            <span className="label-text text-white">Product Description</span>
+                            <span className="label-text text-white">Jersey Description</span>
                         </label>
                         <input type="text" placeholder="Describe Your Product" className="input input-bordered input-sm rounded-md"  {...register("description", {
                             required: "Description is required"
