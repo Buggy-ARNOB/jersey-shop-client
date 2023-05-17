@@ -1,17 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
-
 .App {
   text-align: center;
-  font-family: 'Orbitron', sans-serif;
-}
-
-
-* {
-  color: tomato;
-}
-
-.blackbg {
-  background-color: #282c34 !important;
 }
 
 .App-logo {
@@ -44,7 +32,6 @@
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }

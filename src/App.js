@@ -1,12 +1,13 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { RouterProvider } from 'react-router-dom';
-import { routes } from './Routes/Routes';
+import './App.css';
+import router from './Routes/Routes/Routes';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
-    <div>
-      <RouterProvider router={routes}></RouterProvider>
+    <div className="max-w-[1440px] mx-auto">
+      <RouterProvider router={router} />
+      <Toaster />
     </div>
   );
 }
