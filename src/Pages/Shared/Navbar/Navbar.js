@@ -18,7 +18,6 @@ const Navbar = () => {
 
     const menuItems = <React.Fragment>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/blog">Blog</Link></li>
         {user?.uid ?
             <>
                 <li><Link to="/dashboard">Dashboard</Link></li>
@@ -46,7 +45,7 @@ const Navbar = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <Link to="/"><img className='lg:w-24 xl:w-14 md:w-10 sm:w-10 rounded-xl' src={icon} alt=''></img></Link>
+                <Link to="/"><img className='lg:w-16 xl:w-20 md:w-10 sm:w-10 rounded-xl' src={icon} alt=''></img></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
