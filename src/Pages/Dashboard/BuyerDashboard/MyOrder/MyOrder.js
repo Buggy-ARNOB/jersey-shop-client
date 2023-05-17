@@ -1,8 +1,7 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import Loading from "../../../../component/Loading/Loading"
 import { AuthContext } from '../../../../contexts/AuthProvider';
-import { Link } from 'react-router-dom';
 import { toast } from 'react-hot-toast';
 
 
@@ -30,9 +29,21 @@ const MyOrder = () => {
         }
     })
 
+    console.log(myOrders)
+    const handlePayment = (id) => {
 
-    const handlePayment = () => {
-        toast.success("Payment Successfull")
+        fetch(`http://localhost:5000/payment/${id}`, {
+            method: 'PUT',
+            headers: {
+                authorization: `bearrer ${localStorage.getItem('accessToken')}`
+            }
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                refetch()
+                toast.success(`Payment Successful. TrxId:${id}`)
+            })
     }
 
     if (isLoading) {
@@ -76,7 +87,7 @@ const MyOrder = () => {
                                     {
                                         myOrder.payment === "false"
                                             ?
-                                            <button onClick={handlePayment} className="btn btn-ghost btn-xs bg-violet-500 text-white hover:bg-violet-600">Pay</button>
+                                            <button onClick={() => handlePayment(myOrder._id)} className="btn btn-ghost btn-xs bg-violet-500 text-white hover:bg-violet-600">Pay</button>
                                             :
                                             <p className='text-green-600 font-semibold text-sm'>Paid</p>
                                     }

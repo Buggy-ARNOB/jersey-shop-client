@@ -15,7 +15,6 @@ import MyProduct from "../../Pages/Dashboard/SellerDashBoard/MyProduct/MyProduct
 import AllSeller from "../../Pages/Dashboard/AdminDashboard/AllSeller/AllSeller"
 import AllBuyer from "../../Pages/Dashboard/AdminDashboard/AllBuyer/AllBuyer"
 import ReportedItem from "../../Pages/Dashboard/AdminDashboard/ReportedItem/ReportedItem"
-import Payment from "../../Pages/Payment/Payment";
 import DashAuth from "../DashAuth/DashAuth";
 
 
