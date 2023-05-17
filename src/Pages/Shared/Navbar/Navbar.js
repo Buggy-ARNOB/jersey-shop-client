@@ -17,16 +17,16 @@ const Navbar = () => {
 
 
     const menuItems = <React.Fragment>
-        <li><Link to="/">Home</Link></li>
+        <li><Link className='font-medium font-serif' to="/">Home</Link></li>
         {user?.uid ?
             <>
-                <li><Link to="/dashboard">Dashboard</Link></li>
-                <li><button onClick={handleLogOut}>Sign out</button></li>
+                <li><Link className='font-medium font-serif' to="/dashboard">Dashboard</Link></li>
+                <li><button className='font-medium font-serif' onClick={handleLogOut}>Sign out</button></li>
             </>
             :
             <>
-                <li><Link to="/login">Login</Link></li>
-                <li><Link to="/signup">SignUp</Link></li>
+                <li><Link className='font-medium font-serif' to="/login">Login</Link></li>
+                <li><Link className='font-medium font-serif' to="/signup">SignUp</Link></li>
             </>
         }
 

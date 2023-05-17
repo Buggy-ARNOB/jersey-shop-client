@@ -84,7 +84,7 @@ const AddProduct = () => {
                         <label className="label">
                             <span className="label-text text-white">Jersey Description</span>
                         </label>
-                        <input type="text" placeholder="Describe Your Product" className="input input-bordered input-sm rounded-md"  {...register("description", {
+                        <input type="text" placeholder="Describe About Your Jersey" className="input input-bordered input-sm rounded-md"  {...register("description", {
                             required: "Description is required"
                         })} />
                     </div>
@@ -124,16 +124,16 @@ const AddProduct = () => {
 
                     <div className="form-control w-full max-w-[250px]">
                         <label className="label">
-                            <span className="label-text text-white">Resell Price (in k $)</span>
+                            <span className="label-text text-white">Discounted Price (in k $)</span>
                         </label>
-                        <input type="number" placeholder="Asking Price Here" className="input input-bordered input-sm rounded-md"  {...register("rePrice", {
-                            required: "Asking Price here"
+                        <input type="number" placeholder="Selling Price After Discount" className="input input-bordered input-sm rounded-md"  {...register("rePrice", {
+                            required: "Discounted Price here"
                         })} />
                     </div>
                 </div>
 
 
-
+                {/* 
                 <div className='flex justify-around mb-3'>
 
                     <div className="form-control w-full max-w-[250px]">
@@ -162,7 +162,7 @@ const AddProduct = () => {
                         })} />
                     </div>
 
-                </div>
+                </div> */}
 
 
 

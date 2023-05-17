@@ -7,7 +7,7 @@ import VerificationBadge from '../VerificationBadge/VerificationBadge';
 import Loading from '../Loading/Loading';
 
 const DetailsCard = ({ product }) => {
-    const { _id, description, condition, name, orgPrice, rePrice, pic, sellerName, sellerEmail, usedFor } = product;
+    const { _id, description, name, orgPrice, rePrice, pic, sellerName, sellerEmail } = product;
 
 
 
@@ -84,9 +84,9 @@ const DetailsCard = ({ product }) => {
                                 description.slice(0, 199)
                             }
                         </p>
-                        <p className='text-center w-full'>
+                        {/* <p className='text-center w-full'>
                             <span className='underline mr-1'> Used For:</span>{usedFor} Year
-                        </p>
+                        </p> */}
                     </div>
                 </div>
 
@@ -97,11 +97,11 @@ const DetailsCard = ({ product }) => {
 
                         }
                     </p>
-                    <div className='flex justify-center px-2'>
+                    {/* <div className='flex justify-center px-2'>
                         <p className=''>
                             Condition: {condition}
                         </p>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className='px-5 py-2  text-gray-800 dark:text-gray-200 flex justify-evenly'>

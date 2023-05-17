@@ -98,7 +98,7 @@ const AllSeller = () => {
                             <td>
                                 {seller.email}
                             </td>
-                            <td className='uppercase text-sm'>{seller.role}</td>
+                            <td className='uppercase text-sm font-medium'>{seller.role}</td>
                             <td>
                                 {
                                     seller.verified === "true" ? <>
