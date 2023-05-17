@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import Loading from "../../../../component/Loading/Loading"
 import { AuthContext } from '../../../../contexts/AuthProvider';
