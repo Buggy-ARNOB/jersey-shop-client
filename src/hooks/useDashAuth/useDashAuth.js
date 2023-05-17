@@ -5,7 +5,7 @@ const useDashAuth = (email, role) => {
     const [isUserLoading, setIsUserLoading] = useState(true);
     useEffect(() => {
         if (email) {
-            fetch(`https://zooom-vroom-i-garage-server.vercel.app/role/authorization/${role}/${email}`,
+            fetch(`http://localhost:5000/role/authorization/${role}/${email}`,
                 {
                     headers: {
                         authorization: `bearrer ${localStorage.getItem('accessToken')}`

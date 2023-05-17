@@ -37,4 +37,4 @@ adminPassword: zxcvbnmA5*
 
 
 ## Vercel Server
-- https://zooom-vroom-i-garage-server.vercel.app/
+- http://localhost:5000/
